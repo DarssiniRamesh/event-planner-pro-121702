@@ -75,13 +75,17 @@
   --radius-70: 70px;
   --radius-round: 120px;
 
-  /* Component tokens (from design styles) */
+  /* Component tokens (from DS) */
   --chip-border: var(--color-grey-600);
   --chip-radius: var(--radius-50);
   --btn-cta-bg: var(--color-yellow);
   --btn-cta-radius: var(--radius-10);
   --card-bg: var(--color-white);
   --card-radius: var(--radius-10);
+
+  /* App badges */
+  --app-badge-height: 52px;
+  --app-badge-radius: var(--radius-10);
 
   /* Layout */
   --container-width: 1618px;
