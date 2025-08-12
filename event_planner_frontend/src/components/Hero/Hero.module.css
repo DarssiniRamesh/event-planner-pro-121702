@@ -47,6 +47,49 @@
 .locText {
   font: 500 22px var(--font-display);
   color: var(--color-grey-600);
+  cursor: pointer;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.locationDropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: var(--color-white);
+  border: 1px solid var(--color-grey-300);
+  border-radius: var(--radius-10);
+  margin-top: 4px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+  overflow: hidden;
+}
+
+.locationOption {
+  padding: 12px 18px;
+  font: 500 18px var(--font-display);
+  color: var(--color-grey-600);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  transition: background-color 0.2s;
+}
+
+.locationOption:hover {
+  background: var(--color-grey-100);
+}
+
+.searchLoc {
+  display: flex;
+  align-items: center;
+  gap: var(--space-12);
+  padding: 0 18px;
+  position: relative;
+  cursor: pointer;
 }
 
 @media (max-width: 768px) {

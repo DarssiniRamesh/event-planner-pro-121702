@@ -202,7 +202,8 @@ img { max-width: 100%; display: block; }
 .icon-ticket,
 .icon-location,
 .icon-search,
-.icon-plus {
+.icon-plus,
+.icon-chevron-down {
   display: inline-block;
   width: 22px;
   height: 22px;
@@ -221,6 +222,11 @@ img { max-width: 100%; display: block; }
 .icon-plus {
   mask-image: url('data:image/svg+xml;utf8,<svg width="26" height="26" xmlns="http://www.w3.org/2000/svg"><path d="M13 2v22M2 13h22" stroke="%232b293d" stroke-width="4" stroke-linecap="round"/></svg>');
   -webkit-mask-image: url('data:image/svg+xml;utf8,<svg width="26" height="26" xmlns="http://www.w3.org/2000/svg"><path d="M13 2v22M2 13h22" stroke="%232b293d" stroke-width="4" stroke-linecap="round"/></svg>');
+}
+
+.icon-chevron-down {
+  mask-image: url('data:image/svg+xml;utf8,<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 6L8 10L12 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>');
+  -webkit-mask-image: url('data:image/svg+xml;utf8,<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 6L8 10L12 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>');
 }
 
 /* Responsive helpers */
