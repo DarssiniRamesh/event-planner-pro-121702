@@ -1,0 +1,97 @@
+.hero {
+  background: var(--color-navy);
+  color: var(--color-white);
+  padding: var(--space-56) 0 var(--space-40);
+}
+
+.title {
+  font-family: var(--font-display);
+  font-size: var(--h-hero-size);
+  line-height: var(--h-hero-lh);
+  font-weight: var(--h-hero-weight);
+  color: var(--color-white);
+  margin: 0 0 var(--space-28);
+}
+
+.searchbar {
+  background: var(--color-white);
+  border-radius: var(--radius-10);
+  display: grid;
+  grid-template-columns: 1fr 302px;
+  gap: 0;
+  overflow: hidden;
+}
+
+.searchField {
+  display: flex;
+  align-items: center;
+  gap: var(--space-12);
+  padding: 0 18px;
+  border-right: 1px solid var(--color-grey-300);
+}
+.searchField input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  color: var(--color-grey-600);
+}
+
+.searchLoc {
+  display: flex;
+  align-items: center;
+  gap: var(--space-12);
+  padding: 0 18px;
+}
+
+.locText {
+  font: 500 22px var(--font-display);
+  color: var(--color-grey-600);
+  cursor: pointer;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.locationDropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: var(--color-white);
+  border: 1px solid var(--color-grey-300);
+  border-radius: var(--radius-10);
+  margin-top: 4px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+  overflow: hidden;
+}
+
+.locationOption {
+  padding: 12px 18px;
+  font: 500 18px var(--font-display);
+  color: var(--color-grey-600);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  transition: background-color 0.2s;
+}
+
+.locationOption:hover {
+  background: var(--color-grey-100);
+}
+
+.searchLoc {
+  display: flex;
+  align-items: center;
+  gap: var(--space-12);
+  padding: 0 18px;
+  position: relative;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .searchbar { grid-template-columns: 1fr; }
+}

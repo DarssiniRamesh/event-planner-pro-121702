@@ -1,0 +1,5 @@
+/* Keep minimal smoothing; tokens.css defines fonts and base styles */
+html, body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

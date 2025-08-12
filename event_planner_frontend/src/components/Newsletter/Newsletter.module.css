@@ -1,0 +1,44 @@
+.row {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: var(--space-24);
+  align-items: center;
+  background: var(--color-yellow);
+  padding: var(--space-56) 0;
+}
+
+.desc { max-width: 760px; color: var(--color-dark-text); }
+
+.form {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 0;
+  border: 1px solid var(--color-navy);
+  border-radius: var(--radius-10);
+  overflow: hidden;
+  background: var(--color-white);
+}
+
+.form input {
+  border: none;
+  outline: none;
+  padding: 20px;
+  font-size: 20px;
+  color: var(--color-grey-600);
+}
+
+.form button {
+  border: none;
+  background: var(--color-navy);
+  color: var(--color-white);
+  padding: 0 24px;
+  font-size: 24px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .row {
+    grid-template-columns: 1fr;
+  }
+}
