@@ -72,6 +72,9 @@
 
 .linkLight { color: var(--color-white); }
 
+/* Expose a local "active" class for CSS Modules so NavLink can apply it */
+.active {}
+
 @media (max-width: 768px) {
   .headerInner {
     grid-template-columns: 1fr auto;
