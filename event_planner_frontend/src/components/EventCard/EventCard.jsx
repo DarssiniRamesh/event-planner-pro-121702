@@ -48,7 +48,7 @@ export default function EventCard(props) {
           <div className={styles.metaRow}>
             {priceLabel ? (
               <span className={styles.price}>
-                <span className={styles.priceIcon} aria-hidden="true" />
+                <span className="icon-ticket" aria-hidden="true" style={{ width: 18, height: 18 }} />
                 {priceLabel}
               </span>
             ) : null}

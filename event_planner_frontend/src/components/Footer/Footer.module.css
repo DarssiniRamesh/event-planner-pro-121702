@@ -83,11 +83,12 @@
 }
 
 /* Icons within badges */
-.playIcon,
-.appleIcon {
+.badgeIcon {
   width: 28px;
   height: 28px;
   flex: 0 0 28px;
+  background: #fff; /* ensure white glyph on black badge */
+  display: inline-block;
 }
 
 /* Divider / copy */
