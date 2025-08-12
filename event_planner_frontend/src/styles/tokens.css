@@ -203,6 +203,7 @@ img { max-width: 100%; display: block; }
 .icon-location,
 .icon-search,
 .icon-plus,
+.icon-event-add,
 .icon-chevron-down {
   display: inline-block;
   width: 22px;
@@ -227,6 +228,12 @@ img { max-width: 100%; display: block; }
 .icon-chevron-down {
   mask-image: url('data:image/svg+xml;utf8,<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 6L8 10L12 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>');
   -webkit-mask-image: url('data:image/svg+xml;utf8,<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 6L8 10L12 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>');
+}
+
+/* Figma event-add icon as CSS mask (44x44 target size when used) */
+.icon-event-add {
+  mask-image: url('data:image/svg+xml;utf8,<svg width="44" height="44" viewBox="0 0 44 44" xmlns="http://www.w3.org/2000/svg"><g fill="none" stroke="%232b293d" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="9" width="32" height="29" rx="3" ry="3"/><path d="M12 6v6M32 6v6"/><path d="M6 17h32"/><path d="M22 23v10M17 28h10"/></g></svg>');
+  -webkit-mask-image: url('data:image/svg+xml;utf8,<svg width="44" height="44" viewBox="0 0 44 44" xmlns="http://www.w3.org/2000/svg"><g fill="none" stroke="%232b293d" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="9" width="32" height="29" rx="3" ry="3"/><path d="M12 6v6M32 6v6"/><path d="M6 17h32"/><path d="M22 23v10M17 28h10"/></g></svg>');
 }
 
 /* Responsive helpers */

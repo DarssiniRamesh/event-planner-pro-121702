@@ -16,7 +16,7 @@ export default function CTA() {
         <div>
           <button className="btn btn--yellow" type="button">
             Create Event
-            <span className="icon-plus" style={{ color: 'var(--color-navy)', width: 26, height: 26 }}></span>
+            <span className="icon-event-add" style={{ color: 'var(--color-navy)', width: 44, height: 44 }}></span>
           </button>
         </div>
       </div>
