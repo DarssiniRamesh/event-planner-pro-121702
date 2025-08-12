@@ -44,7 +44,7 @@ export default function Header() {
         <div className={styles.actions}>
           <button className={`${styles.link} ${styles.linkLight}`} type="button">Create Event</button>
           <button className={`${styles.link} ${styles.linkLight}`} type="button">Login</button>
-          <button className="btn btn--yellow btn--small" type="button">Sign Up</button>
+          <Link to="/signup" className="btn btn--yellow btn--small">Sign Up</Link>
         </div>
       </div>
     </header>
