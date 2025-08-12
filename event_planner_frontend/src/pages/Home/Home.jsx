@@ -391,11 +391,7 @@ export default function Home() {
 
       <CTA />
 
-      <section className={`section ${styles.newsletterSection}`}>
-        <div className="container">
-          <Newsletter />
-        </div>
-      </section>
+      <Newsletter />
 
       <Footer />
     </div>

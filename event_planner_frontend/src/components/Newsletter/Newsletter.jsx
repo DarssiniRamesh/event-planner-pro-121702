@@ -15,22 +15,24 @@ export default function Newsletter() {
   };
 
   return (
-    <div className={styles.row}>
-      <div className={styles.desc}>
-        <h3 className="section-title" style={{ marginBottom: 8 }}>Subscribe to our Newsletter</h3>
-        <p className="subtitle">Receive our weekly newsletter &amp; updates with new events from your favourite organizers &amp; venues.</p>
+    <section className={styles.row}>
+      <div className="container">
+        <div className={styles.desc}>
+          <h3 className="section-title" style={{ marginBottom: 8 }}>Subscribe to our Newsletter</h3>
+          <p className="subtitle">Receive our weekly newsletter &amp; updates with new events from your favourite organizers &amp; venues.</p>
+        </div>
+        <form className={styles.form} onSubmit={onSubmit}>
+          <input
+            type="email"
+            placeholder="Enter your e-mail address"
+            required
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            aria-label="Email address"
+          />
+          <button type="submit">Subscribe</button>
+        </form>
       </div>
-      <form className={styles.form} onSubmit={onSubmit}>
-        <input
-          type="email"
-          placeholder="Enter your e-mail address"
-          required
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          aria-label="Email address"
-        />
-        <button type="submit">Subscribe</button>
-      </form>
-    </div>
+    </section>
   );
 }

@@ -7,7 +7,7 @@
 .popularSection {}
 .onlineSection {}
 .trendingSection {}
-.newsletterSection { background: var(--color-yellow); }
+.newsletterSection { }
 
 @media (max-width: 1200px) {
   .cardsGrid {
