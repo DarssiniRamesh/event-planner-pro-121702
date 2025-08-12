@@ -1,0 +1,81 @@
+.header {
+  background: var(--color-navy);
+  color: var(--color-white);
+}
+
+.headerInner {
+  height: 75px;
+  display: grid;
+  grid-template-columns: 240px 1fr auto;
+  align-items: center;
+  gap: var(--space-24);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: var(--space-16);
+}
+
+.brandTicket {
+  width: 70px;
+  height: 54px;
+  background: var(--color-yellow);
+  border-radius: 6px;
+}
+
+.brandName {
+  font-family: var(--font-alt);
+  font-size: 48px;
+  color: var(--color-yellow);
+  line-height: 1;
+}
+
+.nav {
+  display: flex;
+  gap: var(--space-24);
+}
+
+.nav a {
+  color: var(--color-white);
+  font-family: var(--font-display);
+  font-size: 24px;
+  font-weight: 600;
+  padding: 10px 8px;
+  position: relative;
+}
+
+.nav a.active::after {
+  content: "";
+  position: absolute;
+  left: 8px;
+  right: 8px;
+  bottom: -6px;
+  height: 6px;
+  background: var(--color-yellow);
+  border-radius: 3px;
+}
+
+.actions {
+  display: flex;
+  gap: var(--space-12);
+}
+
+.link {
+  background: transparent;
+  border: none;
+  padding: 10px 8px;
+  font: 500 24px var(--font-display);
+  color: inherit;
+  cursor: pointer;
+}
+
+.linkLight { color: var(--color-white); }
+
+@media (max-width: 768px) {
+  .headerInner {
+    grid-template-columns: 1fr auto;
+    row-gap: var(--space-12);
+  }
+  .nav { display: none; }
+}

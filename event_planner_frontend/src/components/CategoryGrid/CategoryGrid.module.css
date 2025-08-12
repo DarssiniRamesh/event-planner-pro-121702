@@ -1,0 +1,32 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(140px, 1fr));
+  gap: var(--space-24);
+}
+
+.cat {
+  display: grid;
+  justify-items: center;
+  gap: var(--space-12);
+}
+
+.circle {
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  background: var(--color-grey-300);
+}
+
+.label {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--color-dark-text);
+  text-align: center;
+}
+
+@media (max-width: 1200px) {
+  .grid { grid-template-columns: repeat(3, 1fr); }
+}
+@media (max-width: 768px) {
+  .grid { grid-template-columns: 1fr 1fr; }
+}
