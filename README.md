@@ -1,1 +1,3 @@
-# event-planner-pro-121702
+# Project Repository
+
+This is the initial README file for the project.
