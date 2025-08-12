@@ -5,7 +5,7 @@
   align-items: center;
 }
 
-.desc { max-width: 760px; }
+.desc { max-width: 760px; color: var(--color-dark-text); }
 
 .form {
   display: grid;

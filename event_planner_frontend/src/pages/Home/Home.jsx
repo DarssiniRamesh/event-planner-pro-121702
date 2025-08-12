@@ -267,7 +267,7 @@ export default function Home() {
 
       <CTA />
 
-      <section className="section">
+      <section className={`section ${styles.newsletterSection}`}>
         <div className="container">
           <Newsletter />
         </div>
