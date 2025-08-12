@@ -46,7 +46,12 @@ export default function EventCard(props) {
           {location ? <div className={styles.meta}>{location}</div> : null}
           {time ? <div className={styles.meta}>{time}</div> : null}
           <div className={styles.metaRow}>
-            {priceLabel ? <span>{priceLabel}</span> : null}
+            {priceLabel ? (
+              <span className={styles.price}>
+                <span className={styles.priceIcon} aria-hidden="true" />
+                {priceLabel}
+              </span>
+            ) : null}
             {priceLabel && interestedLabel ? <span className={styles.dot} /> : null}
             {interestedLabel ? <span>{interestedLabel}</span> : null}
           </div>

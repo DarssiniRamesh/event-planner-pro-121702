@@ -108,6 +108,25 @@
   border-radius: 50%;
 }
 
+/* Price with ticket icon */
+.price {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px; /* tight spacing as per design */
+}
+
+/* Ticket icon recreated as CSS mask to match Figma */
+.priceIcon {
+  display: inline-block;
+  width: 18px;   /* aligns with 18px body text for visual balance */
+  height: 18px;
+  background: currentColor; /* inherits from surrounding text color */
+  mask-image: url('data:image/svg+xml;utf8,<svg width="20" height="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 7a2 2 0 0 1 2-2h5a2 2 0 1 0 4 0h5a2 2 0 0 1 2 2v3a2 2 0 1 0 0 4v3a2 2 0 0 1-2 2h-5a2 2 0 1 0-4 0H5a2 2 0 0 1-2-2v-3a2 2 0 1 0 0-4V7z"/></svg>');
+  -webkit-mask-image: url('data:image/svg+xml;utf8,<svg width="20" height="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 7a2 2 0 0 1 2-2h5a2 2 0 1 0 4 0h5a2 2 0 0 1 2 2v3a2 2 0 1 0 0 4v3a2 2 0 0 1-2 2h-5a2 2 0 1 0-4 0H5a2 2 0 0 1-2-2v-3a2 2 0 1 0 0-4V7z"/></svg>');
+  mask-size: cover;
+  -webkit-mask-size: cover;
+}
+
 @media (max-width: 768px) {
   .body { grid-template-columns: 1fr; }
 }
