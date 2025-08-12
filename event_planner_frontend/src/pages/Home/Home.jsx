@@ -36,7 +36,7 @@ export default function Home() {
     'Travel & Adventure',
   ];
 
-  // Event data modeled from the design HTML
+  // Event data modeled from the design HTML (expanded to 6 per section to match Figma)
   const popularEvents = [
     {
       id: 'p1',
@@ -77,6 +77,46 @@ export default function Home() {
       interestedLabel: '48 interested',
       tags: ['tomorrow'],
       priceType: 'free',
+    },
+    // Added to ensure 6 cards per Figma section
+    {
+      id: 'p4',
+      category: 'Sports & Fitness',
+      dateMonth: 'DEC',
+      dayStart: '10',
+      title: 'Marine Drive 5K Fun Run',
+      location: 'Marine Drive, Mumbai',
+      time: '6 AM - 9 AM',
+      priceLabel: 'INR 299',
+      interestedLabel: '32 interested',
+      tags: ['weekend'],
+      priceType: 'paid',
+    },
+    {
+      id: 'p5',
+      category: 'Technology & Innovation',
+      dateMonth: 'DEC',
+      dayStart: '09',
+      title: 'AI for Everyone: Intro Workshop',
+      location: 'WeWork BKC, Mumbai',
+      time: '11 AM - 1 PM',
+      priceLabel: 'FREE',
+      interestedLabel: '64 interested',
+      tags: ['today'],
+      priceType: 'free',
+    },
+    {
+      id: 'p6',
+      category: 'Cultural & Arts',
+      dateMonth: 'NOV',
+      dayStart: '30',
+      title: 'Street Art Walk - Bandra',
+      location: 'Bandra West, Mumbai',
+      time: '5 PM - 7 PM',
+      priceLabel: 'INR 199',
+      interestedLabel: '18 interested',
+      tags: ['tomorrow'],
+      priceType: 'paid',
     },
   ];
 
@@ -119,6 +159,46 @@ export default function Home() {
       interestedLabel: '10 interested',
       tags: ['tomorrow'],
       priceType: 'free',
+    },
+    // Added to ensure 6 cards per Figma section
+    {
+      id: 'o4',
+      category: 'Technology & Innovation',
+      dateMonth: 'JAN',
+      dayStart: '20',
+      title: 'Build a Portfolio in a Day',
+      location: 'Online',
+      time: '10 AM - 4 PM',
+      priceLabel: 'USD 0',
+      interestedLabel: '75 interested',
+      tags: ['weekend'],
+      priceType: 'free',
+    },
+    {
+      id: 'o5',
+      category: 'Entertainment',
+      dateMonth: 'DEC',
+      dayStart: '18',
+      title: 'Virtual Open Mic Night',
+      location: 'Online',
+      time: '8 PM - 10 PM',
+      priceLabel: 'FREE',
+      interestedLabel: '45 interested',
+      tags: ['today'],
+      priceType: 'free',
+    },
+    {
+      id: 'o6',
+      category: 'Educational & Business',
+      dateMonth: 'DEC',
+      dayStart: '05',
+      title: 'Startup Pitch Practice',
+      location: 'Online',
+      time: '7 PM - 9 PM',
+      priceLabel: 'INR 199',
+      interestedLabel: '',
+      tags: ['tomorrow'],
+      priceType: 'paid',
     },
   ];
 
@@ -164,6 +244,50 @@ export default function Home() {
       priceLabel: 'AUD 0 - 40',
       interestedLabel: '137 interested',
       tags: ['entertainment'],
+      priceType: 'paid',
+    },
+    // Added to ensure 6 cards per Figma section
+    {
+      id: 't4',
+      country: 'United Kingdom',
+      category: 'Cultural & Arts',
+      dateMonth: 'DEC',
+      dayStart: '15',
+      title: 'Winter Choir Gala',
+      location: 'Royal Albert Hall, London',
+      time: '7 PM - 10 PM',
+      priceLabel: 'GBP 25 - 65',
+      interestedLabel: '302 interested',
+      tags: ['arts'],
+      priceType: 'paid',
+    },
+    {
+      id: 't5',
+      country: 'Canada',
+      category: 'Sports & Fitness',
+      dateMonth: 'JAN',
+      dayStart: '06',
+      title: 'Toronto New Year Marathon',
+      location: 'Downtown Toronto',
+      time: '6 AM - 12 PM',
+      priceLabel: 'CAD 30 - 120',
+      interestedLabel: '',
+      tags: ['sports'],
+      priceType: 'paid',
+    },
+    {
+      id: 't6',
+      country: 'Singapore',
+      category: 'Technology & Innovation',
+      dateMonth: 'DEC',
+      dayStart: '22',
+      dayEnd: '23',
+      title: 'DevFest Asia 2023',
+      location: 'Suntec Convention Centre, Singapore',
+      time: '9 AM - 6 PM',
+      priceLabel: 'SGD 0 - 149',
+      interestedLabel: '680 interested',
+      tags: ['technology'],
       priceType: 'paid',
     },
   ];
@@ -248,7 +372,7 @@ export default function Home() {
       <section className={`section ${styles.trendingSection}`}>
         <div className="container">
           <h2 className="section-title">Trending Events around the World</h2>
-          <div className={styles.cardsGrid}>
+        <div className={styles.cardsGrid}>
             {trendingEvents.map((e) => (
               <EventCard key={e.id} {...e} />
             ))}
